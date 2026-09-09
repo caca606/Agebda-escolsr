@@ -10,8 +10,8 @@
 <meta name="theme-color" content="#3FA9DC">
 <title>Agenda Escolar</title>
 <link id="manifestLink" rel="manifest">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%220%22 y2=%221%22><stop offset=%220%22 stop-color=%22%2398E4FF%22/><stop offset=%221%22 stop-color=%22%230F6FB0%22/></linearGradient></defs><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22url(%23g)%22/><text x=%2250%22 y=%2268%22 font-size=%2255%22 text-anchor=%22middle%22>💧</text></svg>">
-<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%220%22 y2=%221%22><stop offset=%220%22 stop-color=%22%2398E4FF%22/><stop offset=%221%22 stop-color=%22%230F6FB0%22/></linearGradient></defs><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22url(%23g)%22/><text x=%2250%22 y=%2268%22 font-size=%2255%22 text-anchor=%22middle%22>💧</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%220%22 y2=%221%22><stop offset=%220%22 stop-color=%22%2298E4FF%22/><stop offset=%221%22 stop-color=%22%230F6FB0%22/></linearGradient></defs><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22url(%23g)%22/><text x=%2250%22 y=%2268%22 font-size=%2255%22 text-anchor=%22middle%22>💧</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%220%22 y2=%221%22><stop offset=%220%22 stop-color=%22%2298E4FF%22/><stop offset=%221%22 stop-color=%22%230F6FB0%22/></linearGradient></defs><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22url(%23g)%22/><text x=%2250%22 y=%2268%22 font-size=%2255%22 text-anchor=%22middle%22>💧</text></svg>">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap');
 
@@ -88,7 +88,7 @@
     text-transform:uppercase; letter-spacing:.06em; margin-bottom:6px; }
   .hdr-top{ display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:14px; }
   h1.hdr-title{ font-size:24px; font-weight:600; margin:0; color:#08324D; text-shadow:0 1px 0 rgba(255,255,255,.5); }
-  .hero-orb{ flex-shrink:0; width:64px; height:56px; filter:drop-shadow(0 6px 10px rgba(9,60,92,.25)); font-size:40px; text-align:center; }
+  .hero-orb{ flex-shrink:0; width:64px; height:56px; filter:drop-shadow(0 6px 10px rgba(9,60,92,.25)); }
 
   .stat-row{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-bottom:14px; }
   .stat-orb{ border-radius:20px; padding:10px 6px 9px; text-align:center; position:relative; overflow:hidden;
@@ -105,7 +105,7 @@
   .week-track-label{ font-size:11px; font-weight:800; color:var(--blue-dk); white-space:nowrap; }
   .week-track-bar{ flex:1; height:12px; border-radius:999px; background:rgba(255,255,255,.55); box-shadow:inset 0 2px 4px rgba(9,60,92,.18); position:relative; overflow:hidden; }
   .week-track-fill{ height:100%; border-radius:999px; background:linear-gradient(180deg, #C9FBDA, var(--green) 45%, var(--green-dk));
-    box-shadow:inset 0 1px 0 rgba(255,255,255,.8); position:relative; transition: width .3s ease; }
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.8); position:relative; }
   .week-track-fill::after{ content:""; position:absolute; right:0; top:0; bottom:0; width:12px; border-radius:50%;
     background:radial-gradient(circle at 35% 30%, #fff, #E7FFEF 60%, rgba(255,255,255,0) 75%); box-shadow:0 0 4px rgba(0,0,0,.15); }
   .week-track-pct{ font-family:'Fredoka',sans-serif; font-size:12px; font-weight:600; color:var(--green-dk); width:34px; text-align:right; }
@@ -125,7 +125,7 @@
     background-image:linear-gradient(180deg, rgba(255,255,255,.65), rgba(255,255,255,0) 40%); }
   .item-body{ flex:1; padding:13px 13px 13px 12px; display:flex; gap:10px; min-width:0; }
   .check-btn{ margin-top:1px; flex-shrink:0; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center;
-    background:linear-gradient(165deg,#fff,#DCEFF7); box-shadow:0 2px 5px rgba(9,60,92,.18), inset 0 1px 0 #fff; font-size:16px; cursor:pointer; }
+    background:linear-gradient(165deg,#fff,#DCEFF7); box-shadow:0 2px 5px rgba(9,60,92,.18), inset 0 1px 0 #fff; font-size:16px; }
   .item-main{ flex:1; min-width:0; }
   .item-tag{ display:flex; align-items:center; gap:6px; font-size:11px; font-weight:800; letter-spacing:.02em; margin-bottom:3px; }
   .item-title{ font-weight:700; font-size:15.5px; line-height:1.3; color:#0B3652; }
@@ -134,16 +134,37 @@
   .stamp{ font-family:'Fredoka',sans-serif; font-size:10.5px; font-weight:600; padding:3px 10px; border-radius:20px; display:inline-block;
     background:rgba(255,255,255,.75); box-shadow:inset 0 1px 0 #fff, 0 1px 2px rgba(0,0,0,.08); }
   .diff-badge{ font-size:10.5px; font-weight:800; padding:3px 10px; border-radius:20px; box-shadow:inset 0 1px 0 rgba(255,255,255,.6); }
-  .del-btn{ align-self:flex-start; padding:5px; color:#8FB6CC; flex-shrink:0; font-size:15px; cursor:pointer; }
+  .del-btn{ align-self:flex-start; padding:5px; color:#8FB6CC; flex-shrink:0; font-size:15px; }
 
-  .empty{ text-align:center; padding:40px 20px 20px; position:relative; z-index:1; }
+  .empty{ text-align:center; padding:56px 20px 20px; position:relative; z-index:1; }
   .empty-orb{ width:84px; height:84px; border-radius:50%; margin:0 auto 18px; display:flex; align-items:center; justify-content:center; font-size:36px;
     background:radial-gradient(circle at 32% 26%, #fff, var(--blue-lt) 45%, var(--blue) 100%);
     box-shadow:0 12px 24px rgba(9,60,92,.25), inset 0 2px 3px rgba(255,255,255,.8); }
   .empty-title{ font-family:'Fredoka',sans-serif; font-weight:600; font-size:18px; margin-bottom:6px; color:#0B3652; }
   .empty-text{ font-size:14px; color:var(--ink-muted); max-width:280px; margin:0 auto 20px; font-weight:600; }
   .btn-pill{ display:inline-block; padding:12px 26px; border-radius:999px; color:#fff; font-weight:800; font-size:14px;
-    background:linear-gradient(180deg, var(--teal) 0%, var(--teal-dk) 100%); box-shadow:0 8px 18px rgba(6,140,121,.4), inset 0 1px 0 rgba(255,255,255,.6); cursor:pointer; }
+    background:linear-gradient(180deg, var(--teal) 0%, var(--teal-dk) 100%); box-shadow:0 8px 18px rgba(6,140,121,.4), inset 0 1px 0 rgba(255,255,255,.6); }
+
+  .toggle-completed{ font-size:12.5px; font-weight:800; color:var(--ink-muted); display:flex; align-items:center; gap:6px; margin:6px 4px 12px; }
+
+  /* ---- calendar ---- */
+  .cal-nav{ display:flex; align-items:center; justify-content:space-between; margin:18px 4px 12px; position:relative; z-index:1; }
+  .cal-nav button{ width:38px; height:38px; border-radius:50%; background:linear-gradient(165deg,#fff,#DCEFF7);
+    box-shadow:0 4px 10px rgba(9,60,92,.18), inset 0 1px 0 #fff; font-size:16px; color:var(--blue-dk); font-weight:800; }
+  .cal-title{ font-family:'Fredoka',sans-serif; font-weight:600; font-size:17px; text-transform:capitalize; color:#0B3652; }
+  .cal-grid{ padding:14px; }
+  .cal-weekdays{ display:grid; grid-template-columns:repeat(7,1fr); margin-bottom:4px; }
+  .cal-weekdays span{ text-align:center; font-size:10px; font-weight:800; color:#5D8AA3; padding:4px 0; }
+  .cal-days{ display:grid; grid-template-columns:repeat(7,1fr); row-gap:6px; }
+  .cal-cell{ display:flex; flex-direction:column; align-items:center; padding:5px 0; border-radius:14px; }
+  .cal-cell.selected{ background:linear-gradient(165deg, rgba(28,140,216,.18), rgba(28,140,216,.05)); }
+  .cal-num{ width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:12.5px; font-weight:700; color:#0B3652; }
+  .cal-num.today{ background:radial-gradient(circle at 32% 28%, #fff, var(--teal) 60%, var(--teal-dk)); color:#fff; font-weight:800; box-shadow:0 2px 6px rgba(6,140,121,.4); }
+  .cal-num.selected{ background:radial-gradient(circle at 32% 28%, #fff, var(--blue-lt) 45%, var(--blue)); color:#fff; font-weight:800; box-shadow:0 2px 6px rgba(11,92,153,.4); }
+  .cal-dots{ display:flex; gap:2px; margin-top:4px; height:6px; }
+  .cal-dots span{ width:5px; height:5px; border-radius:50%; box-shadow:0 0 0 .5px rgba(255,255,255,.6); }
+  .cal-day-list{ margin-top:20px; position:relative; z-index:1; }
+  .cal-day-title{ font-family:'Fredoka',sans-serif; font-weight:600; font-size:14px; color:var(--blue-dk); margin:0 4px 9px; text-transform:capitalize; }
 
   /* ---- materias ---- */
   .subject-row{ padding:13px 15px; display:flex; align-items:center; gap:11px; margin-bottom:11px; }
@@ -159,7 +180,7 @@
     border:1px solid rgba(255,255,255,.9); border-radius:999px;
     box-shadow:0 14px 30px rgba(9,60,92,.3), inset 0 1px 0 rgba(255,255,255,.95);
     backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); }
-  .nav-btn{ display:flex; flex-direction:column; align-items:center; gap:3px; padding:4px 8px; cursor:pointer; }
+  .nav-btn{ display:flex; flex-direction:column; align-items:center; gap:3px; padding:4px 8px; }
   .nav-circle{ width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:19px;
     background:linear-gradient(165deg,#fff,#DCEFF7); box-shadow:0 3px 8px rgba(9,60,92,.2), inset 0 1px 0 #fff; position:relative; }
   .nav-btn.active .nav-circle{ background:radial-gradient(circle at 32% 28%, #fff, var(--blue-lt) 45%, var(--blue) 100%);
@@ -170,14 +191,13 @@
   .fab{ position:fixed; bottom:104px; right:20px; width:60px; height:60px; border-radius:50%;
     background:radial-gradient(circle at 32% 26%, #B7F2E6, var(--teal) 55%, var(--teal-dk) 100%);
     color:#fff; font-size:30px; font-weight:700; display:flex; align-items:center; justify-content:center;
-    box-shadow:0 12px 26px rgba(6,140,121,.45), inset 0 2px 3px rgba(255,255,255,.8); z-index:40; cursor:pointer; }
+    box-shadow:0 12px 26px rgba(6,140,121,.45), inset 0 2px 3px rgba(255,255,255,.8); z-index:40; }
   .fab::after{ content:""; position:absolute; top:9%; left:20%; width:32%; height:18%;
     background:rgba(255,255,255,.8); border-radius:50%; filter:blur(2px); transform:rotate(-18deg); }
   .fab:active{ transform:scale(.93); }
 
   /* ---- modal / bottom sheet ---- */
-  .overlay{ position:fixed; inset:0; background:rgba(6,40,64,.45); z-index:50; display:none; align-items:flex-end; backdrop-filter:blur(2px); }
-  .overlay.active{ display:flex; }
+  .overlay{ position:fixed; inset:0; background:rgba(6,40,64,.45); z-index:50; display:flex; align-items:flex-end; backdrop-filter:blur(2px); }
   .sheet{ background:linear-gradient(180deg, #FDFEFF, #EAF6FB); width:100%; max-width:460px; margin:0 auto;
     border-radius:28px 28px 0 0; padding:18px 18px calc(18px + env(safe-area-inset-bottom)); max-height:88vh; overflow-y:auto;
     box-shadow:0 -10px 30px rgba(9,60,92,.3); border-top:1px solid rgba(255,255,255,.9); }
@@ -190,13 +210,22 @@
   .field-input:focus{ box-shadow:0 0 0 3px rgba(28,140,216,.28); border-color:var(--blue); }
   .chip-row{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
   .chip{ padding:9px 15px; border-radius:999px; font-size:13px; font-weight:800; background:#fff; color:#3E6A88;
-    border:1px solid #D6ECF4; box-shadow:0 2px 4px rgba(9,60,92,.08); transition:transform .1s; cursor:pointer; }
+    border:1px solid #D6ECF4; box-shadow:0 2px 4px rgba(9,60,92,.08); transition:transform .1s; }
   .chip:active{ transform:scale(.95); }
-  .chip.active{ color:#fff; background:var(--blue); border-color:transparent; box-shadow:0 4px 10px rgba(9,60,92,.3), inset 0 1px 0 rgba(255,255,255,.5); }
+  .chip.active{ color:#fff; border-color:transparent; box-shadow:0 4px 10px rgba(9,60,92,.3), inset 0 1px 0 rgba(255,255,255,.5); }
+  .color-grid{ display:grid; grid-template-columns:repeat(8,1fr); gap:9px; margin-bottom:20px; }
+  .color-swatch{ width:100%; aspect-ratio:1; border-radius:50%; box-shadow:inset 0 -3px 4px rgba(0,0,0,.18), inset 0 2px 3px rgba(255,255,255,.6); }
   .btn-row{ display:flex; gap:10px; }
-  .btn-secondary{ flex:1; padding:13px; border-radius:16px; background:#E4F2F8; color:#3E6A88; font-weight:800; font-size:14px; cursor:pointer; }
-  .btn-primary{ flex:1; padding:13px; border-radius:16px; color:#fff; font-weight:800; font-size:14px; cursor:pointer;
+  .btn-secondary{ flex:1; padding:13px; border-radius:16px; background:#E4F2F8; color:#3E6A88; font-weight:800; font-size:14px; }
+  .btn-primary{ flex:1; padding:13px; border-radius:16px; color:#fff; font-weight:800; font-size:14px;
     background:linear-gradient(180deg, var(--blue) 0%, var(--blue-dk) 100%); box-shadow:0 8px 16px rgba(11,92,153,.4), inset 0 1px 0 rgba(255,255,255,.5); }
+  .btn-primary:disabled, .btn-secondary:disabled{ opacity:.4; }
+  .btn-full{ width:100%; padding:15px; border-radius:16px; color:#fff; font-weight:800; font-size:15px;
+    background:linear-gradient(180deg, var(--teal) 0%, var(--teal-dk) 100%); box-shadow:0 10px 20px rgba(6,140,121,.4), inset 0 1px 0 rgba(255,255,255,.5); }
+
+  .toast{ position:fixed; top:calc(14px + env(safe-area-inset-top)); left:50%; transform:translateX(-50%);
+    background:linear-gradient(180deg, var(--red), var(--red-dk)); color:#fff;
+    font-size:12.5px; font-weight:800; padding:9px 16px; border-radius:999px; box-shadow:0 8px 18px rgba(216,56,78,.4); z-index:60; }
 
   @media (max-width:340px){
     h1.hdr-title{ font-size:20px; } .stat-value{ font-size:17px; } .item-title{ font-size:14.5px; } .hero-orb{ width:52px; height:46px; }
@@ -207,34 +236,6 @@
 <div id="screen">
   <div class="bubbles" id="bubbles"></div>
   <div id="app"></div>
-</div>
-
-<!-- Modal Formulario para Nueva Tarea -->
-<div class="overlay" id="modal">
-  <div class="sheet">
-    <div class="sheet-handle"></div>
-    <div class="sheet-hdr">
-      <div class="sheet-title">Nueva Tarea / Examen</div>
-      <button onclick="toggleModal(false)" style="font-weight:800; color:var(--ink-muted);">✕</button>
-    </div>
-    
-    <div class="field-label">TÍTULO</div>
-    <input type="text" id="inputTitle" class="field-input" placeholder="Ej. Ejercicios de Matemáticas...">
-
-    <div class="field-label">MATERIA</div>
-    <div class="chip-row" id="subjectChips"></div>
-
-    <div class="field-label">TIPO</div>
-    <div class="chip-row" id="typeChips"></div>
-
-    <div class="field-label">DIFICULTAD</div>
-    <div class="chip-row" id="diffChips"></div>
-
-    <div class="btn-row" style="margin-top:10px;">
-      <button class="btn-secondary" onclick="toggleModal(false)">Cancelar</button>
-      <button class="btn-primary" onclick="addTask()">Guardar</button>
-    </div>
-  </div>
 </div>
 
 <script>
@@ -250,66 +251,541 @@ const DIFFICULTY = {
   media:   { label:"Media",   weight:2, color:"#FFA23C" },
   dificil: { label:"Difícil", weight:3, color:"#FF5B6E" },
 };
-
-let currentTab = 'agenda';
-let selectedSubject = 0;
-let selectedType = 'tarea';
-let selectedDiff = 'media';
-
-let subjects = JSON.parse(localStorage.getItem('agenda_subjects')) || [
-  { id:0, name:"Matemáticas", color:SUBJECT_COLORS[4] },
-  { id:1, name:"Historia", color:SUBJECT_COLORS[1] },
-  { id:2, name:"Ciencias", color:SUBJECT_COLORS[2] }
+const DURATIONS = [
+  { key:"corta", label:"Corta", hint:"~20 min" },
+  { key:"media", label:"Media", hint:"~45 min" },
+  { key:"larga", label:"Larga", hint:"1–2 h" },
+  { key:"muy_larga", label:"Muy larga", hint:"2+ h" },
 ];
+const MESES = ["ENE","FEB","MAR","ABR","MAY","JUN","JUL","AGO","SEP","OCT","NOV","DIC"];
+const MESES_LARGO = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+const DIAS_SEMANA = ["L","M","X","J","V","S","D"];
+const DIAS_LARGO = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
 
-let tasks = JSON.parse(localStorage.getItem('agenda_tasks')) || [
-  { id: 1, title: "Resolver problemas de Álgebra", subjectId: 0, type: "tarea", diff: "facil", done: false },
-  { id: 2, title: "Examen Capítulo 3", subjectId: 1, type: "examen", diff: "dificil", done: false }
-];
+/* --------------------------------- helpers --------------------------------- */
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2,7);
+function toDateOnly(d){ const x = new Date(d); x.setHours(0,0,0,0); return x; }
+function todayDateOnly(){ return toDateOnly(new Date()); }
+function daysUntil(iso){ return Math.round((toDateOnly(iso) - todayDateOnly()) / 86400000); }
+function formatStamp(iso){ const d = new Date(iso+"T00:00:00"); return d.getDate()+" "+MESES[d.getMonth()]; }
+function esc(s){ return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
 
-function saveData() {
-  localStorage.setItem('agenda_tasks', JSON.stringify(tasks));
-  localStorage.setItem('agenda_subjects', JSON.stringify(subjects));
+function urgencyOf(item){
+  const d = daysUntil(item.dueDate);
+  const w = (DIFFICULTY[item.difficulty]||DIFFICULTY.media).weight;
+  if (d < 0) return { flames:3, label:"Vencida" };
+  let base = d<=1?3 : d<=3?2 : d<=7?1 : 0;
+  if (w===3 && d<=7 && base<3) base += 1;
+  base = Math.min(3, base);
+  return { flames:base, label: d===0?"Hoy": d===1?"Mañana": d+" días" };
+}
+function bucketOf(item){
+  const d = daysUntil(item.dueDate);
+  if (d<0) return "vencidas";
+  if (d===0) return "hoy";
+  if (d===1) return "manana";
+  if (d<=7) return "semana";
+  return "proximamente";
+}
+const BUCKET_META = {
+  vencidas:{label:"Vencidas",color:"#FF5B6E"}, hoy:{label:"Hoy",color:"#1C8CD8"},
+  manana:{label:"Mañana",color:"#1C8CD8"}, semana:{label:"Esta semana",color:"#5D8AA3"},
+  proximamente:{label:"Más adelante",color:"#5D8AA3"},
+};
+
+/* ----------------------------------- state ----------------------------------- */
+let state = {
+  subjects: JSON.parse(localStorage.getItem("agenda_subjects") || "[]"),
+  items: JSON.parse(localStorage.getItem("agenda_items") || "[]"),
+  tab: "hoy",
+  showCompleted: false,
+  calYear: new Date().getFullYear(),
+  calMonth: new Date().getMonth(),
+  selectedDay: null,
+  modal: null, // 'addItem' | 'addSubject'
+  editingItemId: null,
+  toast: null,
+};
+function save(){
+  localStorage.setItem("agenda_subjects", JSON.stringify(state.subjects));
+  localStorage.setItem("agenda_items", JSON.stringify(state.items));
+}
+function setState(patch){ Object.assign(state, patch); render(); }
+function flashToast(msg){
+  state.toast = msg; render();
+  clearTimeout(flashToast._t);
+  flashToast._t = setTimeout(()=>{ state.toast=null; render(); }, 2200);
 }
 
-function render() {
-  const app = document.getElementById('app');
-  
-  const pending = tasks.filter(t => !t.done).length;
-  const doneCount = tasks.filter(t => t.done).length;
-  const total = tasks.length;
-  const pct = total === 0 ? 0 : Math.round((doneCount / total) * 100);
+/* ----------------------------------- actions ----------------------------------- */
+function addSubject(name, color){
+  if(!name.trim()) return;
+  state.subjects.push({ id:uid(), name:name.trim(), color });
+  save(); setState({ modal:null });
+}
+function removeSubject(id){
+  state.subjects = state.subjects.filter(s=>s.id!==id);
+  state.items = state.items.filter(i=>i.subjectId!==id);
+  save(); render();
+}
+function toggleDone(id){
+  const it = state.items.find(i=>i.id===id);
+  if(it) it.done = !it.done;
+  save(); render();
+}
+function deleteItem(id){
+  state.items = state.items.filter(i=>i.id!==id);
+  save(); render();
+}
+function saveItemForm(data){
+  if(state.editingItemId){
+    const it = state.items.find(i=>i.id===state.editingItemId);
+    Object.assign(it, data);
+  } else {
+    state.items.push({ id:uid(), done:false, createdAt:Date.now(), ...data });
+  }
+  save(); setState({ modal:null, editingItemId:null });
+}
 
-  let mainContent = '';
+/* ------------------------------------ render ------------------------------------ */
+function render(){
+  const app = document.getElementById("app");
+  app.innerHTML = renderHeader() + '<main id="main">' + renderMain() + '</main>' + renderNav() +
+    '<button class="fab" data-action="openAdd">+</button>' + renderModal() +
+    (state.toast?`<div class="toast">${esc(state.toast)}</div>`:'');
+  attachEvents();
+}
 
-  if (currentTab === 'agenda') {
-    mainContent = `
-      <header class="app-header">
-        <div class="hdr-inner">
-          <div class="hdr-glass">
-            <div class="hdr-top">
-              <div>
-                <div class="hdr-date">HOY</div>
-                <h1 class="hdr-title font-display">Mi Agenda</h1>
-              </div>
-              <div class="hero-orb">💧</div>
-            </div>
-            <div class="stat-row">
-              <div class="stat-orb ${pending > 3 ? 'danger' : ''}">
-                <div class="stat-value">${pending}</div>
-                <div class="stat-label">Pendientes</div>
-              </div>
-              <div class="stat-orb">
-                <div class="stat-value">${doneCount}</div>
-                <div class="stat-label">Listas</div>
-              </div>
-              <div class="stat-orb">
-                <div class="stat-value">${total}</div>
-                <div class="stat-label">Total</div>
-              </div>
-            </div>
-            <div class="week-track">
-              <div class="week-track-label">Progreso</div>
-              <div class="week-track-bar">
-                <div class="week-track-fill" style="width:${pct}%"></div>
-          
+function heroOrbSvg(){
+  return `<svg class="hero-orb" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="blobGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#EAFBFF"/>
+        <stop offset="0.5" stop-color="#5CC7EE"/>
+        <stop offset="1" stop-color="#0B5C99"/>
+      </linearGradient>
+      <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+        <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <path d="M60 6C88 2 112 22 114 50C116 78 92 98 62 96C34 94 6 80 6 52C6 26 32 10 60 6Z" fill="url(#blobGrad)"/>
+    <path d="M60 6C88 2 112 22 114 50C116 60 108 68 96 70C70 74 40 60 34 36C30 20 44 9 60 6Z" fill="url(#shine)" opacity="0.55"/>
+    <g transform="translate(35,30)">
+      <path d="M0 6 Q12 -2 24 6 L24 42 Q12 34 0 42 Z" fill="#ffffff" opacity="0.92"/>
+      <path d="M50 6 Q38 -2 26 6 L26 42 Q38 34 50 42 Z" fill="#ffffff" opacity="0.92"/>
+      <line x1="25" y1="6" x2="25" y2="42" stroke="#8FD9F5" stroke-width="2"/>
+    </g>
+    <g fill="#ffffff">
+      <path d="M18 16 L20 21 L25 23 L20 25 L18 30 L16 25 L11 23 L16 21 Z" opacity="0.9"/>
+      <path d="M99 24 L100.5 28 L104.5 29.5 L100.5 31 L99 35 L97.5 31 L93.5 29.5 L97.5 28 Z" opacity="0.85"/>
+      <path d="M92 66 L93.5 70 L97.5 71.5 L93.5 73 L92 77 L90.5 73 L86.5 71.5 L90.5 70 Z" opacity="0.8"/>
+    </g>
+  </svg>`;
+  }
+
+  function renderHeader(){
+  const pending = state.items.filter(i=>!i.done);
+  const overdue = pending.filter(i=>daysUntil(i.dueDate)<0).length;
+  const weekItemsAll = state.items.filter(i=>{ const d=daysUntil(i.dueDate); return d>=0 && d<=7; });
+  const weekPending = weekItemsAll.filter(i=>!i.done).length;
+  const weekDone = weekItemsAll.filter(i=>i.done).length;
+  const weekTotal = weekItemsAll.length;
+  const weekPct = weekTotal>0 ? Math.round((weekDone/weekTotal)*100) : 0;
+  const today = new Date();return `
+  <header class="app-header"><div class="hdr-inner"><div class="hdr-glass">
+    <div class="hdr-date">✨ ${DIAS_LARGO[today.getDay()]}, ${today.getDate()} de ${MESES_LARGO[today.getMonth()]}</div>
+    <div class="hdr-top">
+      <h1 class="hdr-title font-display">Tu agenda</h1>
+      ${heroOrbSvg()}
+    </div>
+    <div class="stat-row">
+      <div class="stat-orb"><div class="stat-value font-display">${pending.length}</div><div class="stat-label">Pendientes</div></div>
+      <div class="stat-orb"><div class="stat-value font-display">${weekPending}</div><div class="stat-label">Esta semana</div></div>
+      <div class="stat-orb ${overdue>0?'danger':''}"><div class="stat-value font-display">${overdue}</div><div class="stat-label">Vencidas</div></div>
+    </div>
+    ${weekTotal>0?`
+    <div class="week-track">
+      <span class="week-track-label">Semana</span>
+      <div class="week-track-bar"><div class="week-track-fill" style="width:${weekPct}%"></div></div>
+      <span class="week-track-pct font-display">${weekPct}%</span>
+    </div>`:''}
+  </div></div></header>`;
+}
+
+function renderMain(){
+  if(state.tab==="hoy") return renderHoy();
+  if(state.tab==="calendario") return renderCalendario();
+  if(state.tab==="materias") return renderMaterias();
+  return "";
+}
+
+function renderNav(){
+  const tabs = [ ["hoy","🗒️","Agenda"], ["calendario","📅","Calendario"], ["materias","📚","Materias"] ];
+  return `<nav class="bottomnav"><div class="nav-inner">
+    ${tabs.map(([key,icon,label])=>`
+      <button class="nav-btn ${state.tab===key?'active':''}" data-action="setTab" data-tab="${key}">
+        <span class="nav-circle">${icon}</span><span class="nav-label">${label}</span>
+      </button>`).join("")}
+  </div></nav>`;
+}
+
+/* ------------------------------------ Hoy ------------------------------------ */
+function renderHoy(){
+  if(state.subjects.length===0){
+    return emptyState("🎓","Empieza por tus materias","Agrega las clases de este semestre para poder registrar tareas y exámenes.","Agregar materia","goMaterias");
+  }
+  const pending = state.items.filter(i=>!i.done);
+  const completed = state.items.filter(i=>i.done);
+  if(pending.length===0 && completed.length===0){
+    return emptyState("📋","Nada pendiente todavía","Cuando un profesor te deje una tarea o examen, tócalo con el botón + para registrarlo.","Agregar tarea o examen","openAdd");
+  }
+  const buckets = { vencidas:[], hoy:[], manana:[], semana:[], proximamente:[] };
+  pending.forEach(i=>buckets[bucketOf(i)].push(i));
+  Object.values(buckets).forEach(arr=>arr.sort((a,b)=> new Date(a.dueDate)-new Date(b.dueDate) ||
+    (DIFFICULTY[b.difficulty].weight - DIFFICULTY[a.difficulty].weight)));
+
+  let html = '<div style="padding-top:20px">';
+  Object.entries(buckets).forEach(([key,arr])=>{
+    if(arr.length===0) return;
+    html += `<div class="section">
+      <div class="section-hdr"><span class="dot" style="background:${BUCKET_META[key].color}"></span>
+        <span class="section-title" style="color:${BUCKET_META[key].color}">${BUCKET_META[key].label}</span>
+        <span class="section-count">(${arr.length})</span></div>
+      ${arr.map(renderItemCard).join("")}
+    </div>`;
+  });
+  if(completed.length>0){
+    html += `<button class="toggle-completed" data-action="toggleCompleted">✓ ${state.showCompleted?'Ocultar':'Mostrar'} completadas (${completed.length})</button>`;
+    if(state.showCompleted){
+      html += `<div style="opacity:.6">${completed.map(renderItemCard).join("")}</div>`;
+    }
+  }
+  html += '</div>';
+  return html;
+}
+
+function renderItemCard(item){
+  const subject = state.subjects.find(s=>s.id===item.subjectId);
+  const diff = DIFFICULTY[item.difficulty] || DIFFICULTY.media;
+  const urgency = urgencyOf(item);
+  const color = subject ? subject.color : "#8895A7";
+  const dangerish = urgency.label==="Vencida" || urgency.label==="Hoy" || urgency.label==="Mañana";
+  return `
+  <div class="item-row ${item.done?'done':''}">
+    <div class="glass item-card">
+      <div class="item-gem" style="background:${color}"></div>
+      <div class="item-body">
+        <button class="check-btn" data-action="toggleDone" data-id="${item.id}" style="color:${item.done?color:'#B9D5E2'}">${item.done?'✔':'○'}</button>
+        <div class="item-main" data-action="editItem" data-id="${item.id}">
+          <div class="item-tag" style="color:${color}">${TYPES[item.type].icon} ${esc(subject?subject.name:'Sin materia')} · ${TYPES[item.type].label}</div>
+          <div class="item-title ${item.done?'done':''}">${esc(item.title)}</div>
+          <div class="item-meta">
+            <span class="stamp" style="color:${dangerish?'#D8384E':'#0B5C99'}">${formatStamp(item.dueDate)} · ${urgency.label}</span>
+            <span class="diff-badge" style="background:${diff.color}30;color:${diff.color}">${diff.label}</span>
+            ${'🔥'.repeat(urgency.flames)}
+          </div>
+        </div>
+        <button class="del-btn" data-action="deleteItem" data-id="${item.id}">🗑️</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function emptyState(icon,title,text,actionLabel,action){
+  return `<div class="empty">
+    <div class="empty-orb">${icon}</div>
+    <div class="empty-title font-display">${title}</div>
+    <div class="empty-text">${text}</div>
+    <button class="btn-pill" data-action="${action}">${actionLabel}</button>
+  </div>`;
+}
+
+/* --------------------------------- Calendario --------------------------------- */
+function renderCalendario(){
+  const year = state.calYear, month = state.calMonth;
+  const first = new Date(year, month, 1);
+  const startWeekday = (first.getDay()+6) % 7;
+  const daysInMonth = new Date(year, month+1, 0).getDate();
+  const cells = []; for(let i=0;i<startWeekday;i++) cells.push(null);
+  for(let d=1; d<=daysInMonth; d++) cells.push(d);
+
+  const itemsByDay = {};
+  state.items.forEach(it=>{
+    const d = new Date(it.dueDate+"T00:00:00");
+    if(d.getFullYear()===year && d.getMonth()===month){
+      (itemsByDay[d.getDate()] = itemsByDay[d.getDate()]||[]).push(it);
+    }
+  });
+  const todayD = new Date();
+  const isCurrentMonth = todayD.getFullYear()===year && todayD.getMonth()===month;
+
+  let html = `<div class="cal-nav">
+    <button data-action="calPrev">‹</button>
+    <span class="cal-title font-display">${MESES_LARGO[month]} ${year}</span>
+    <button data-action="calNext">›</button>
+  </div>
+  <div class="glass cal-grid">
+    <div class="cal-weekdays">${DIAS_SEMANA.map(d=>`<span>${d}</span>`).join("")}</div>
+    <div class="cal-days">`;
+
+  cells.forEach(day=>{
+    if(!day){ html += `<div></div>`; return; }
+    const iso = year+"-"+String(month+1).padStart(2,"0")+"-"+String(day).padStart(2,"0");
+    const dayItems = itemsByDay[day] || [];
+    const isToday = isCurrentMonth && todayD.getDate()===day;
+    const isSelected = state.selectedDay===iso;
+    html += `<button class="cal-cell ${isSelected?'selected':''}" data-action="selectDay" data-iso="${iso}">
+      <span class="cal-num ${isToday?'today':''} ${isSelected?'selected':''}">${day}</span>
+      <div class="cal-dots">${dayItems.slice(0,3).map(it=>{
+        const s = state.subjects.find(x=>x.id===it.subjectId);
+        return `<span style="background:${s?s.color:'#8895A7'}"></span>`;
+      }).join("")}</div>
+    </button>`;
+  });
+  html += `</div></div>`;
+
+  html += `<div class="cal-day-list">`;
+  if(state.selectedDay){
+    const d = new Date(state.selectedDay+"T00:00:00");
+    const label = d.toLocaleDateString("es-ES",{weekday:"long",day:"numeric",month:"long"});
+    const dayItems = state.items.filter(it=>it.dueDate===state.selectedDay);
+    html += `<div class="cal-day-title">${label}</div>`;
+    html += dayItems.length===0
+      ? `<p style="color:#5D8AA3;font-weight:700;font-size:14px;padding:0 4px">Nada para este día.</p>`
+      : dayItems.map(renderItemCard).join("");
+  } else {
+    html += `<p style="color:#5D8AA3;font-weight:700;font-size:14px;text-align:center;padding-top:8px">Toca un día para ver los detalles.</p>`;
+  }
+  html += `</div>`;
+  return html;
+}
+
+/* ---------------------------------- Materias ---------------------------------- */
+function renderMaterias(){
+  let html = `<div style="padding-top:20px">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin:0 4px 14px">
+      <h2 class="font-display" style="font-weight:600;font-size:18px;color:#0B3652">Tus materias</h2>
+      <button data-action="openAddSubject" style="color:var(--blue-dk);font-weight:800;font-size:14px">+ Agregar</button>
+    </div>`;
+  if(state.subjects.length===0){
+    html += emptyState("📚","Aún no tienes materias","Agrega tus clases de este semestre, con un color para reconocerlas rápido.","Agregar materia","openAddSubject");
+  } else {
+    html += state.subjects.map(s=>{
+      const count = state.items.filter(i=>i.subjectId===s.id && !i.done).length;
+      return `<div class="glass subject-row">
+        <span class="subject-swatch" style="background:${s.color}"></span>
+        <span class="subject-name">${esc(s.name)}</span>
+        <span class="subject-count">${count} pendiente${count!==1?'s':''}</span>
+        <button data-action="deleteSubject" data-id="${s.id}" style="color:#B9D5E2">🗑️</button>
+      </div>`;
+    }).join("");
+  }
+  html += `</div>`;
+  return html;
+}
+
+/* ------------------------------------ Modal ------------------------------------ */
+function renderModal(){
+  if(state.modal==="addSubject") return renderAddSubjectModal();
+  if(state.modal==="addItem") return renderAddItemModal();
+  return "";
+}
+
+function renderAddSubjectModal(){
+  return `<div class="overlay" data-action="closeModal">
+    <div class="sheet" onclick="event.stopPropagation()">
+      <div class="sheet-handle"></div>
+      <div class="sheet-title font-display">Nueva materia</div>
+      <input id="subjectNameInput" class="field-input" placeholder="Ej. Matemáticas" style="margin-top:12px" value="${esc(pickedName||'')}" oninput="pickedName=this.value">
+      <div class="color-grid" id="colorGrid">
+        ${SUBJECT_COLORS.map((c,i)=>`<button class="color-swatch" data-color="${c}" style="background:${c};outline:${c===pickedColor?'3px solid #0B3652':'none'};outline-offset:2px" data-action="pickColor"></button>`).join("")}
+      </div>
+      <div class="btn-row">
+        <button class="btn-secondary" data-action="closeModal">Cancelar</button>
+        <button class="btn-primary" data-action="submitSubject">Guardar</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+let pickedColor = SUBJECT_COLORS[0];
+let pickedName = "";
+
+function renderAddItemModal(){
+  if(state.subjects.length===0){
+    return `<div class="overlay" data-action="closeModal">
+      <div class="sheet" onclick="event.stopPropagation()" style="text-align:center">
+        <div class="sheet-handle"></div>
+        <div style="font-size:34px;margin-bottom:10px">📚</div>
+        <p style="font-weight:700;margin-bottom:16px;color:#0B3652">Primero agrega una materia para poder registrar algo.</p>
+        <button class="btn-full" data-action="goMateriasFromModal">Agregar materia</button>
+      </div>
+    </div>`;
+  }
+  const f = formState;
+  return `<div class="overlay" data-action="closeModal">
+    <div class="sheet" onclick="event.stopPropagation()">
+      <div class="sheet-handle"></div>
+      <div class="sheet-hdr">
+        <div class="sheet-title font-display">${state.editingItemId?'Editar pendiente':'Nuevo pendiente'}</div>
+        <button data-action="closeModal" style="font-size:20px;color:#8FB6CC">✕</button>
+      </div>
+
+      <div class="field-label">📘 Materia</div>
+      <div class="chip-row" id="subjectChips">
+        ${state.subjects.map(s=>`<button class="chip ${s.id===f.subjectId?'active':''}" data-action="pickSubject" data-id="${s.id}" style="${s.id===f.subjectId?`background:${s.color}`:''}">${esc(s.name)}</button>`).join("")}
+      </div>
+
+      <div class="field-label">🏷️ Tipo</div>
+      <div class="chip-row" id="typeChips">
+        ${Object.entries(TYPES).map(([k,t])=>`<button class="chip ${k===f.type?'active':''}" data-action="pickType" data-key="${k}" style="${k===f.type?'background:#1C8CD8':''}">${t.icon} ${t.label}</button>`).join("")}
+      </div>
+
+      <div class="field-label">✏️ Título</div>
+      <input id="itemTitleInput" class="field-input" placeholder="Ej. Ejercicios capítulo 4" value="${esc(f.title||'')}" oninput="formState.title=this.value">
+
+      <div class="field-label">📅 Fecha de entrega</div>
+      <input id="itemDateInput" type="date" class="field-input" value="${f.dueDate||''}" oninput="formState.dueDate=this.value">
+
+      <div class="field-label">💪 Dificultad</div>
+      <div class="chip-row" id="diffChips">
+        ${Object.entries(DIFFICULTY).map(([k,d])=>`<button class="chip ${k===f.difficulty?'active':''}" data-action="pickDiff" data-key="${k}" style="${k===f.difficulty?`background:${d.color}`:''}">${d.label}</button>`).join("")}
+      </div>
+
+      <div class="field-label">⏱️ Duración estimada</div>
+      <div class="chip-row" id="durChips">
+        ${DURATIONS.map(d=>`<button class="chip ${d.key===f.duration?'active':''}" data-action="pickDur" data-key="${d.key}" style="${d.key===f.duration?'background:#1C8CD8':''}">${d.label} <span style="opacity:.7;font-size:10px">${d.hint}</span></button>`).join("")}
+      </div>
+
+      <div class="field-label">🗒️ Notas (opcional)</div>
+      <textarea id="itemNotesInput" class="field-input" rows="2" placeholder="Detalles adicionales…" style="resize:none" oninput="formState.notes=this.value">${esc(f.notes||'')}</textarea>
+
+      <button class="btn-full" data-action="submitItem">Guardar</button>
+    </div>
+  </div>`;
+}
+
+/* form selection state — single source of truth for the open form,
+   so every re-render (chip taps, etc.) keeps whatever the user has already entered */
+let formState = { subjectId:null, type:"tarea", difficulty:"media", duration:"media", title:"", dueDate:"", notes:"" };
+
+function openAddModal(){
+  formState = {
+    subjectId: state.subjects[0]?state.subjects[0].id:null,
+    type:"tarea", difficulty:"media", duration:"media",
+    title:"", dueDate:new Date().toISOString().slice(0,10), notes:""
+  };
+  setState({ modal:"addItem", editingItemId:null });
+}
+function editItem(id){
+  const it = state.items.find(i=>i.id===id);
+  if(!it) return;
+  formState = {
+    subjectId:it.subjectId, type:it.type, difficulty:it.difficulty, duration:it.duration,
+    title:it.title, dueDate:it.dueDate, notes:it.notes||""
+  };
+  setState({ modal:"addItem", editingItemId:id });
+}
+
+/* ------------------------------------ events ------------------------------------ */
+function attachEvents(){
+  document.querySelectorAll("[data-action]").forEach(el=>{
+    el.addEventListener("click", (e)=>{
+      const action = el.dataset.action;
+      switch(action){
+        case "setTab": setState({ tab:el.dataset.tab }); break;
+        case "goMaterias": setState({ tab:"materias" }); break;
+        case "goMateriasFromModal": setState({ modal:null, tab:"materias" }); break;
+        case "openAdd": openAddModal(); break;
+        case "editItem": editItem(el.dataset.id); break;
+        case "closeModal": setState({ modal:null, editingItemId:null }); break;
+        case "toggleDone": toggleDone(el.dataset.id); break;
+        case "deleteItem": deleteItem(el.dataset.id); break;
+        case "toggleCompleted": setState({ showCompleted: !state.showCompleted }); break;
+        case "deleteSubject": if(confirm("¿Eliminar esta materia y sus tareas asociadas?")) removeSubject(el.dataset.id); break;
+        case "openAddSubject": pickedColor = SUBJECT_COLORS[0]; pickedName=""; setState({ modal:"addSubject" }); break;
+        case "pickColor": pickedColor = el.dataset.color; render(); break;
+        case "submitSubject": {
+          const name = pickedName || (document.getElementById("subjectNameInput")?document.getElementById("subjectNameInput").value:"");
+          addSubject(name, pickedColor);
+          break;
+        }
+        case "pickSubject": formState.subjectId = el.dataset.id; render(); break;
+        case "pickType": formState.type = el.dataset.key; render(); break;
+        case "pickDiff": formState.difficulty = el.dataset.key; render(); break;
+        case "pickDur": formState.duration = el.dataset.key; render(); break;
+        case "submitItem": {
+          const title = (formState.title||"").trim();
+          const dueDate = formState.dueDate;
+          const notes = (formState.notes||"").trim();
+          if(!title){ flashToast("Ponle un título al pendiente"); return; }
+          if(!dueDate){ flashToast("Elige una fecha de entrega"); return; }
+          if(!formState.subjectId){ flashToast("Elige una materia"); return; }
+          saveItemForm({ subjectId:formState.subjectId, type:formState.type, title,
+            dueDate, difficulty:formState.difficulty, duration:formState.duration, notes });
+          break;
+        }
+        case "calPrev": {
+          let m = state.calMonth-1, y = state.calYear;
+          if(m<0){ m=11; y--; }
+          setState({ calMonth:m, calYear:y });
+          break;
+        }
+        case "calNext": {
+          let m = state.calMonth+1, y = state.calYear;
+          if(m>11){ m=0; y++; }
+          setState({ calMonth:m, calYear:y });
+          break;
+        }
+        case "selectDay": setState({ selectedDay: state.selectedDay===el.dataset.iso ? null : el.dataset.iso }); break;
+      }
+    });
+  });
+}
+
+/* ------------------------------- decorative bubbles + sparkles ------------------------------- */
+(function initBubbles(){
+  const wrap = document.getElementById("bubbles");
+  const sizes = [90,60,130,40,75,50,110];
+  sizes.forEach((s,i)=>{
+    const b = document.createElement("div");
+    b.className = "bubble";
+    b.style.width = s+"px"; b.style.height = s+"px";
+    b.style.left = (8 + (i*13)%88) + "%";
+    b.style.top = (6 + (i*17)%80) + "%";
+    b.style.animationDelay = (i*1.7)+"s";
+    b.style.animationDuration = (16 + (i%5)*3)+"s";
+    wrap.appendChild(b);
+  });
+  const sparklePos = [[15,8],[85,14],[6,40],[92,52],[70,6],[30,90]];
+  sparklePos.forEach(([left,top],i)=>{
+    const sp = document.createElement("div");
+    sp.className = "sparkle";
+    sp.textContent = "✦";
+    sp.style.left = left+"%"; sp.style.top = top+"%";
+    sp.style.fontSize = (10 + (i%3)*4)+"px";
+    sp.style.animationDelay = (i*0.6)+"s";
+    wrap.appendChild(sp);
+  });
+})();
+
+/* ------------------------------- installable app (manifest) ------------------------------- */
+(function initManifest(){
+  try{
+    const manifest = {
+      name:"Agenda Escolar", short_name:"Agenda",
+      start_url:".", display:"standalone", background_color:"#C7EEFC", theme_color:"#3FA9DC",
+      icons:[{ src:"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230F6FB0'/%3E%3Ctext x='50' y='68' font-size='55' text-anchor='middle'%3E%F0%9F%92%A7%3C/text%3E%3C/svg%3E", sizes:"512x512", type:"image/svg+xml" }]
+    };
+    const blob = new Blob([JSON.stringify(manifest)], {type:"application/manifest+json"});
+    document.getElementById("manifestLink").href = URL.createObjectURL(blob);
+  }catch(e){ /* manifest is a nice-to-have, ignore if unsupported */ }
+})();
+
+/* ------------------------------------ init ------------------------------------ */
+render();
+</script>
+</body>
+</html>
+    
